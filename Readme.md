@@ -89,6 +89,27 @@ Visit Agile Management Board
 ```
 
 #### 02.04. Playwright Setup LLD
+```mermaid
+  flowchart
+    Developer["Developer"]
+      CLI["Command Line Interface"]
+    Tester["Tester"]
+      GithubActions["Github Actions"]
+    subgraph Testing["Testing"]
+      Playwright["Playwright"]
+    end
+    subgraph Project["Project"]
+      direction TB
+      Backend["Backend"]
+      Frontend["Frontend"]
+    end
+
+    Developer --> CLI
+    Tester --> GithubActions
+      CLI --> Testing
+      GithubActions --> Testing
+        Testing --> Project
+```
 
 #### 02.05. Servers & DNS Setup LLD
 
@@ -130,3 +151,7 @@ Visit Agile Management Board
   - Local: [http://localhost:3004](http://localhost:3004)
   - Live: []()
 
+### Testing
+- Report
+  - Local: [http://localhost:9323](http://localhost:9323)
+  - Live: []()
