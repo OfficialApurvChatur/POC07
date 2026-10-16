@@ -9,6 +9,8 @@ class EnvironmentConnection {
   private MACHINE = "default";
   private PORT = 8000;
   private APP_NAME = "POC07-ExpressServices&RTKQuerySetup";
+  private BACKEND_URL = "http://localhost:8000";
+  private FRONTEND_URL = "http://localhost:3000";
 
   constructor() {
     this.loadEnvironment();
@@ -51,6 +53,14 @@ class EnvironmentConnection {
     this.APP_NAME = String(
       process.env.NODE_APP_NAME || this.APP_NAME  
     );
+
+    this.BACKEND_URL = String(
+      process.env.BACKEND_URL || this.BACKEND_URL  
+    );
+
+    this.FRONTEND_URL = String(
+      process.env.FRONTEND_URL || this.FRONTEND_URL  
+    );
   }
 
   public getEnvironment() {
@@ -59,6 +69,8 @@ class EnvironmentConnection {
       MACHINE: this.MACHINE,
       PORT: this.PORT,
       APP_NAME: this.APP_NAME,
+      BACKEND_URL: this.BACKEND_URL,
+      FRONTEND_URL: this.FRONTEND_URL,
     }
   }
 }
