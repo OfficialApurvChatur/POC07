@@ -74,6 +74,7 @@ Visit Agile Management Board
     end
     subgraph Project["Proejct"]
       Backend["Backend"]
+      Frontend["Frontend"]
     end
 
     User --> develop
@@ -113,17 +114,17 @@ Visit Agile Management Board
 
 ### Frontend
 - Development
-  - Local: [http://localhost:5173](http://localhost:5173)
+  - Local: [http://localhost:3001](http://localhost:3001)
   - Live: []()
 
 - Testing
-  - Local: []()
+  - Local: [http://localhost:3002](http://localhost:3002)
   - Live: []()
 
 - Staging
-  - Local: []()
+  - Local: [http://localhost:3003](http://localhost:3003)
   - Live: []()
 
 - Production
-  - Local: []()
+  - Local: [http://localhost:3004](http://localhost:3004)
   - Live: []()
