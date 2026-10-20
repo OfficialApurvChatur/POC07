@@ -27,7 +27,7 @@ const ReactConnection = () => {
         <p>React connection created successfully...</p>
         <ul>
           <li>Environment: {ENV}</li>
-          <li>MachineL {MACHINE}</li>
+          <li>Machine: {MACHINE}</li>
           <li>Port: {PORT}</li>
           <li>App Name: {APP_NAME}</li>
         </ul>

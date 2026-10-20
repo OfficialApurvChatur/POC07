@@ -73,8 +73,10 @@ Visit Agile Management Board
       prod["prod"]
     end
     subgraph Project["Proejct"]
+      direction TB
       Backend["Backend"]
       Frontend["Frontend"]
+      Testing["Testing"]
     end
 
     User --> develop
